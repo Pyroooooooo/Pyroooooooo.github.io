@@ -309,127 +309,17 @@
 		font-size: 14px;
 	}
 	</style>
-	<script type="text/javascript" async="" src="./Strong Random Password Generator_files/matomo.js.download"></script>
-	<script language="javascript" type="text/javascript">
-	function $(id) {
-		return document.getElementById(id);
-	}
-
-	function OnCopy() {
-		var copyText = $("final_pass");
-		copyText.select();
-		copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-		document.execCommand("copy");
-	}
-
-	function OXU(le, sy, nu, lo, up, si, am, cl, au) {
-		$("pgLength").value = le;
-		$("Symbols").checked = sy;
-		$("Numbers").checked = nu;
-		$("Lowercase").checked = lo;
-		$("Uppercase").checked = up;
-		$("Nosimilar").checked = si;
-		$("NoAmb").checked = am;
-		$("Client").checked = cl;
-		$("AutoSelect").checked = au;
-	}
-
-	function OpenMyURL() {
-		var le, sy, nu, lo, up, si, am, cl, au;
-		sy = 0;
-		nu = 0;
-		lo = 0;
-		up = 0;
-		si = 0;
-		am = 0;
-		cl = 0;
-		au = 0;
-		le = $("pgLength").value;
-		if($("Symbols").checked) sy = 1;
-		if($("Numbers").checked) nu = 1;
-		if($("Lowercase").checked) lo = 1;
-		if($("Uppercase").checked) up = 1;
-		if($("Nosimilar").checked) si = 1;
-		if($("NoAmb").checked) am = 1;
-		if($("Client").checked) cl = 1;
-		if($("AutoSelect").checked) au = 1;
-		var strLink = "//passwordsgenerator.net/?";
-		strLink += "length=" + le;
-		strLink += "&symbols=" + sy;
-		strLink += "&numbers=" + nu;
-		strLink += "&lowercase=" + lo;
-		strLink += "&uppercase=" + up;
-		strLink += "&similar=" + si;
-		strLink += "&ambiguous=" + am;
-		strLink += "&client=" + cl;
-		strLink += "&autoselect=" + au;
-		var win = window.open(strLink, '_blank');
-		win.focus();
-	}
-
-	function getParameterByName(name) {
-		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-			results = regex.exec(location.search);
-		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-	}
-
-	function Init() {
-		var nLength = getParameterByName('length');
-		var bSymbols = getParameterByName('symbols');
-		var bNumbers = getParameterByName('numbers');
-		var bLowercase = getParameterByName('lowercase');
-		var bUppercase = getParameterByName('uppercase');
-		var bSimilar = getParameterByName('similar');
-		var bAmbiguous = getParameterByName('ambiguous');
-		var bClient = getParameterByName('client');
-		var AutoSelect = getParameterByName('autoselect');
-		var nLength2 = parseInt(nLength);
-		var bSymbols2 = parseInt(bSymbols);
-		var bNumbers2 = parseInt(bNumbers);
-		var bLowercase2 = parseInt(bLowercase);
-		var bUppercase2 = parseInt(bUppercase);
-		var bSimilar2 = parseInt(bSimilar);
-		var bAmbiguous2 = parseInt(bAmbiguous);
-		var bClient2 = parseInt(bClient);
-		var AutoSelect2 = parseInt(AutoSelect);
-		if(nLength.length > 0 && bSymbols.length > 0 && bNumbers.length > 0 && bLowercase.length > 0 && bUppercase.length > 0 && bSimilar.length > 0 && bAmbiguous.length > 0 && bClient.length > 0 && AutoSelect.length > 0) OXU(nLength2, bSymbols2, bNumbers2, bLowercase2, bUppercase2, bSimilar2, bAmbiguous2, bClient2, AutoSelect2);
-		else OIU();
-	}
-
-	function newtab(strURL) {
-		var win = window.open(strURL, '_blank');
-		win.focus();
-	}
-
-	function scrollme() {
-		var bodyRect = document.body.getBoundingClientRect();
-		var elemRect = $("SecTipsDIV").getBoundingClientRect();
-		var offset2 = elemRect.top - bodyRect.top;
-		window.scrollTo(0, offset2);
-	}
-
-	function scroll2top() {
-		window.scrollTo(0, 0);
-	}
-
-	function SelCountry() {
-		var strCountry = $("idCountry").value;
-		if(strCountry != "en") window.location.href = "//passwordsgenerator.net/" + strCountry;
-	}
-	</script>
 </head>
 
 <body onload="Init();">
 	<div class="container">
 		<div id="header">
-			<!--	<div id="Logo"><img src="https://i.imgur.com/9B7x1JT.png" border="0" alt="numbers"></div>--><img src="https://i.imgur.com/9B7x1JT.png" border="0" size="100" width="100" alt="Secure Random Password Generator">
+			<!--	<div id="Logo"><img src="https://i.imgur.com/9B7x1JT.png" border="0" alt="numbers"></div>--><img src="https://i.imgur.com/9B7x1JT.png" border="0" size="100" width="100" alt="conpir">
 			<div id="LogoText">numbr</div>
 		</div>
 		<!-- header -->
-		<div id="ADTOP">
-			<script async="" src="./Strong Random Password Generator_files/f.txt"></script>
-			<!-- password top --><a href="https://twitter.com/pyrowith8os">main twitter</a>
+		<div id="links">
+			<a href="https://twitter.com/pyrowith8os">main twitter</a>
 			<br> <a href="https://twitter.com/sourfazeberry">alt twitter</a>
 			<br> <a href="https://steamcommunity.com/id/tropicaIrain/">steam</a>
 			<br> <a href="https://twitter.com/pyrowith8os">main twitter</a>
@@ -439,26 +329,6 @@
 		<div style="clear:both"></div>
 	</div>
 	<!-- container -->
-	<!-- Matomo -->
-	<script type="text/javascript">
-	var _paq = window._paq = window._paq || [];
-	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-	_paq.push(['trackPageView']);
-	_paq.push(['enableLinkTracking']);
-	(function() {
-		var u = "//gifmaker.me/stats/matomo/";
-		_paq.push(['setTrackerUrl', u + 'matomo.php']);
-		_paq.push(['setSiteId', '1']);
-		var d = document,
-			g = d.createElement('script'),
-			s = d.getElementsByTagName('script')[0];
-		g.type = 'text/javascript';
-		g.async = true;
-		g.src = u + 'matomo.js';
-		s.parentNode.insertBefore(g, s);
-	})();
-	</script>
-	<!-- End Matomo Code -->
 </body>
 
 </html>
